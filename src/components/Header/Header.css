@@ -1,0 +1,13 @@
+.header a {
+  text-decoration: none;
+  margin-right: 15px;
+  padding: 2px 5px;
+  color: aliceblue;
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+.active {
+  background-color: rgb(90, 236, 79);
+  color: lightcoral;
+}
