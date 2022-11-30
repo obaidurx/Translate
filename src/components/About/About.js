@@ -8,19 +8,11 @@ const About = () => {
   const [inserted_language, setInserted_language] = useState("");
 
   const translate = () => {
-    // const text = document.getElementById("textField");
-    // const innerText = text.value;
-    // const showText = document.getElementById("show-text");
-    // showText.innerHTML = innerText;
-    // // console.log(showText);
     let data = { base_sentence, base_language, inserted_language };
     fetch("https://csify.selubi.dev/csify/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        // CORS support for post method
-        "Access-Control-Allow-Methods": "POST",
-        "Access-Control-Allow-Headers": "Content-Type",
       },
       body: JSON.stringify(data),
     })
